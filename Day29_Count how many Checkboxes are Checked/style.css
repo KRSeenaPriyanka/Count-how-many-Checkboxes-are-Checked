@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #cbc9e8;
+}
+
+.container{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+
+.container form, .container .output_field{
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+}
+
+.container .output_field{
+    width: 450px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+form h4{
+    font-size: 20px;
+    padding: 10px;
+    letter-spacing: 1.2px;
+    border-bottom: 1px solid lightgray;
+}
+
+form .input_field, form .selectAll{
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+
+form .selectAll{
+    font-size: 22px;
+    font-weight: 500;
+    padding-left: 14px;
+}
+
+form .selectAll:hover{
+    background: lightcyan;
+}
+
+form .selectAll input{
+    transform: scale(1.5);
+}
+
+form .input_field:last-child{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+form .input_field:hover{
+    background: lightblue;
+}
+
+form input, form label{
+    cursor: pointer;
+}
+
+form label{
+    margin-left: 10px;
+}
+
+.output_field > div{
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+}
+
+.output_field .skills{
+    word-wrap: break-word;
+}
+
+.quantity span, .skills span{
+    font-weight: bold;
+}
